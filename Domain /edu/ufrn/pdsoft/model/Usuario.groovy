@@ -1,15 +1,12 @@
 package edu.ufrn.pdsoft.model
 
-class Nutricionista {
-	String name
-	String localCrn
+class Usuario {  
+	String nome
 	String nomeLogin
 	String senhaLogin
-	double crn
-	double cpf
-	double rg
-
-
+	int cpf
+	int rg
+	//adicionar classe da dieta
     static constraints = {
     }
 }
