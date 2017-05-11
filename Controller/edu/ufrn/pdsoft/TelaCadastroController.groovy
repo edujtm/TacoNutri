@@ -1,6 +1,7 @@
 package edu.ufrn.pdsoft
 
 import edu.ufrn.pdsoft.model.Alimento
+import edu.ufrn.pdsoft.model.Nutricionista
 
 class TelaCadastroController {
 

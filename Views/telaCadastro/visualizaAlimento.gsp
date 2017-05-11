@@ -8,7 +8,7 @@
 	</head>
 	<body>
 
-		<g:form controller="TelaCadastroController" action="buscarAlimento">
+		<g:form controller="TelaCadastro" action="buscarAlimento">
 			<g:textField name="alimentoBusca"/>
 			<input type="submit" value="Buscar"/>
 		</g:form>
