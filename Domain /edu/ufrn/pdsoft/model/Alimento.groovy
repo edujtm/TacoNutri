@@ -4,11 +4,11 @@ class Alimento {
 
 	//Duvida como fazer o id ser autoincrementavel
 
-	int id  
+	// int id  
 	String nome
-	double calorias
-	double proteinas
-	double calcio
+	double calorias  // em [kcal]
+	double proteinas // em [g]
+	double calcio  // em [mg]
 
 	//Adicionar mais informações dos alimentos aqui
 

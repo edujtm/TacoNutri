@@ -29,12 +29,11 @@ class TelaCadastroController {
 
     def cadastrarAlimento() {
     	double qntCalorias = Double.parseDouble(params.qntCalorias)
-    	double qntProteinas = Double.parseDouble(param.qntProteinas)
-    	double qntCalcio = Double.parseDouble(param.qntCalcio)
+    	double qntProteinas = Double.parseDouble(params.qntProteinas)
+    	double qntCalcio = Double.parseDouble(params.qntCalcio)
 
     	Alimento alimento = new Alimento(nome: params.nomeAlimento, calorias: qntCalorias , proteinas: qntProteinas , calcio: qntCalcio )
-    	alimento.save();
-    	render "Produto salvo com sucesso"
-        // Não está aparecendo o render
+    	alimento.save(flush: true);
+    	render(view: 'cadastroFeito.gsp')
     }
 }

@@ -8,7 +8,7 @@
 	</head>
 	<body>
 
-		<g:form controller="TelaCadastroController" action="cadastrarAlimento">
+		<g:form controller="TelaCadastro" action="cadastrarAlimento">
 			<b>Nome do alimento</b> <g:textField name="nomeAlimento"/> <br/>
 			<b>Quantidade de calorias: </b> <g:textField name="qntCalorias"/> <br/>
 			<b>Quantidade de proteinas: </b> <g:textField name="qntProteinas"/> <br/>
