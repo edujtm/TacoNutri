@@ -6,8 +6,8 @@
 	</head>
 	<body>
 		<g:form controller="Login" action="autenticarUsuario">
-			<g:textField name="nomeUsuario"/>
-			<g:passwordField name="senhaUsuario"/>
+			<g:textField name="nomeUsuario"/> <br/>
+			<g:passwordField name="senhaUsuario"/> <br/>
 			<input type="submit" value="Entrar"/>
 		</g:form>
 	</body>
