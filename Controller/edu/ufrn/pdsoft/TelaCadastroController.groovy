@@ -27,4 +27,14 @@ class TelaCadastroController {
     	*/
     }
 
+    def cadastrarAlimento() {
+    	double qntCalorias = Double.parseDouble(params.qntCalorias)
+    	double qntProteinas = Double.parseDouble(param.qntProteinas)
+    	double qntCalcio = Double.parseDouble(param.qntCalcio)
+
+    	Alimento alimento = new Alimento(nome: params.nomeAlimento, calorias: qntCalorias , proteinas: qntProteinas , calcio: qntCalcio )
+    	alimento.save();
+    	render "Produto salvo com sucesso"
+        // Não está aparecendo o render
+    }
 }
