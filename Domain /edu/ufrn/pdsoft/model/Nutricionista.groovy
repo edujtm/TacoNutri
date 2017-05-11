@@ -1,7 +1,7 @@
 package edu.ufrn.pdsoft.model
 
 class Nutricionista {
-	String name
+	String nomeNutricionista
 	String localCrn
 	String nomeLogin
 	String senhaLogin

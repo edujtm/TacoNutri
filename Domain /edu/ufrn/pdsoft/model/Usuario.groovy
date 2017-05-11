@@ -1,7 +1,7 @@
 package edu.ufrn.pdsoft.model
 
 class Usuario {  
-	String nome
+	String nomeCompleto
 	String nomeLogin
 	String senhaLogin
 	int cpf
