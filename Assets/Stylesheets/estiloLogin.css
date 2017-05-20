@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -33,6 +37,14 @@ body {
 	font-weight: bold;
 }
 
+#logo {
+	color: #FFF;
+	font-family: 'Ruda', sans-serif;
+	font-size: 36px;
+	display: inline-block;
+	transform: translateX(350%);
+}
+
 .outer {
 	display: table;
 	position: absolute;
@@ -48,6 +60,7 @@ body {
 #formLogin {
 	height: 300px;
 	width: 300px;
+	padding: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -61,7 +74,7 @@ body {
 .inputField {
 	padding: 2px;
 	width: 100px;
-	height: 1.5em;
+	height: 2em;
 	background-color: #1E1E24;
 	color: #FFF;
 	border: 1px solid #FFF;
