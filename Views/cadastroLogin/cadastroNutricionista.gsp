@@ -8,7 +8,7 @@
 	</head>
 	<body>
 
-		<!--<g:form controller="TelaCadastro" action="cadastrarAlimento">-->
+		<g:form controller="CadastroLogin" action="cadastrarNutricionista">
 			<b>Nome do nutricionista: </b> <g:textField name="nomeNutricionista"/> <br/>
 			<b>Login: </b> <g:textField name="nomeLogin"/> <br/>
 			<b>Senha: </b> <g:passwordField name="senhaLogin"/> <br/>
