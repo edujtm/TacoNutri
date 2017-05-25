@@ -8,44 +8,6 @@ body {
 	background-image: url('../images/5.jpg');
 }
 
-#nav {
-	background-color: #1E1E24;
-	height: auto;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 999;
-}
-
-#nav ul {
-	padding: 0;
-}
-
-#nav li {
-	color: #FFF;
-	display: inline-block;
-	margin: 20px;
-	text-transform: uppercase;
-}
-
-#nav a {
-	font-family: 'Catamaran', sans-serif;
-	color: #FFF;
-	text-decoration: none;
-	font-size: 16px;
-	letter-spacing: 2px;
-	font-weight: bold;
-}
-
-#logo {
-	color: #FFF;
-	font-family: 'Ruda', sans-serif;
-	font-size: 36px;
-	display: inline-block;
-	transform: translateX(350%);
-}
-
 .outer {
 	display: table;
 	position: absolute;

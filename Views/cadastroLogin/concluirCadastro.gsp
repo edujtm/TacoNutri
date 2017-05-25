@@ -4,7 +4,7 @@
 		<title> Sucesso! </title>
 	</head>
 	<body>
-		<!-- colocar o topo da página aqui -->
+		<g:render template="/layouts/topo_toolbar"/>
 		<h1>Cadastro feito com Sucesso! Bem vindo ao TacoNutri</h1>
 		<h3>Um e-mail será enviado para confirmação de sua conta.</h3>
 		<div id="links">
