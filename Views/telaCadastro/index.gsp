@@ -10,8 +10,9 @@
 		<!--Adicionar descrição sobre a tabela TACO depois -->
 		<table>
 			<tr>
-				<td><a href='/telaCadastro/visualizaAlimento'>Visualizar alimentos</a> <td/>
-				<td><a href='/telaCadastro/cadastroAlimento'>Cadastrar alimentos</a> <td/>
+				<td><a href='/Alimento/list'>Visualizar alimentos</a> <td/>
+				<td><a href='/Alimento/upload'>Cadastrar alimentos</a> <td/>
+				<td><a href='/TelaCadastro/cadastroReceita'>Cadastrar receita</a><td/>
 			</tr>
 		</table>
 	</body>
