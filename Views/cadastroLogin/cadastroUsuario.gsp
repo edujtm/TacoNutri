@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-		<meta name="layout" content="main"/>
 		<title>Cadastro de usuário paciente</title>
-
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Pontano+Sans|Ruda:900" rel="stylesheet"/>
+		<asset:stylesheet src="estiloTopToolbarLoggedOut.css"/>
+		<asset:stylesheet src="estiloCadastroUsuario.css"/>
 	</head>
 	<body>
 		<!-- TODO colocar topo da página e texto de boas vindas -->
-		<div id="formCadastroN">
-			<g:form controller="CadastroLogin" action="cadastrarUsuario">
-				<b>Nome do paciente: </b> <g:textField name="nomeCompleto"/> <br/>
-				<b>Login: </b> <g:textField name="nomeLogin"/> <br/>
-				<b>Senha: </b> <g:passwordField name="senhaLogin"/> <br/>
-				<b>CPF: </b> <g:textField name="cpf"/> <br/>
-				<b>RG: </b> <g:textField name="rg"/> <br/>
-				<input type="submit" value="Cadastrar"/>
-			</g:form>
+		<g:render template="/layouts/topo_toolbar"/>
+		<div id="background">
+			<div id="formCadastroU">
+				<div id="formContent">
+					<g:form controller="CadastroLogin" action="cadastrarUsuario">
+						<span class="label"><b>Nome do paciente </b></span> <g:textField class="inputField" name="nomeCompleto"/> <br/>
+						<span class="label"><b>Login </b></span> <g:textField class="inputField" name="nomeLogin"/> <br/>
+						<span class="label"><b>Senha </b></span> <g:passwordField class="inputField" name="senhaLogin"/> <br/>
+						<span class="label"><b>CPF </b></span> <g:textField class="inputField" name="cpf"/> <br/>
+						<span class="label"><b>RG </b></span> <g:textField class="inputField" name="rg"/> <br/>
+						<input class="btn" type="submit" value="Cadastrar"/>
+					</g:form>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

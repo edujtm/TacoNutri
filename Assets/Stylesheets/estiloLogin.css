@@ -5,7 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-image: url('../images/5.jpg');
+	background-color: #FAF6F4;
 }
 
 .outer {
@@ -32,6 +32,7 @@ body {
 	font-weight: bold;
 	background-color: #1E1E24;
 	border-radius: 10px;
+	box-shadow: 0 0 5px #000;
 }
 
 .inputField {
@@ -40,7 +41,7 @@ body {
 	height: 2em;
 	background-color: #1E1E24;
 	color: #FFF;
-	border: 1px solid #FFF;
+	border: 1px solid #2BDA8A;
 	border-radius: 2px;
 }
 
@@ -48,7 +49,7 @@ body {
 	font-family: 'Ruda', sans-serif;
 	padding: 5px 15px;
 	background-color: #1E1E24;
-	border: 2px solid #FFF;
+	border: 2px outset #2BDA8A;
 	border-radius: 2px;
 	color: #FFF;
 	font-weight: bold;
