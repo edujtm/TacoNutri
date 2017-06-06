@@ -11,7 +11,7 @@
 			<b>Nome da receita </b><g:textField class="inputField" name="nomeReceita"/><br/>
 			<b>Descrição: </b><g:textArea class="inputField" name="descricaoReceita" value="Sua descrição" row="5" cols="40"/><br/>
 			<b>Tipo de receita </b> 
-			<select>
+			<select name="tipoReceita">
 				<option value="padrao">Padrao</option>
 				<option value="geral">Geral</option>
 			</select> <br/>
