@@ -13,6 +13,7 @@
 				<td><a href='/Alimento/list'>Visualizar alimentos</a> <td/>
 				<td><a href='/Alimento/upload'>Cadastrar alimentos</a> <td/>
 				<td><a href='/TelaCadastro/cadastroReceita'>Cadastrar receita</a><td/>
+				<td><a href='/TelaCadastro/visualizaReceita'>Visualizar receita</a><td/>
 			</tr>
 		</table>
 	</body>
