@@ -13,5 +13,9 @@ class Alimento {
 	//Adicionar mais informações dos alimentos aqui
 
     static constraints = {
+    	nome blank: false, unique: true
+    	calorias blank: false
+    	proteinas blank: false
+    	calcio blank: false
     }
 }

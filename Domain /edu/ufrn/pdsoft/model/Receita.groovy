@@ -4,6 +4,8 @@ import edu.ufrn.pdsoft.model.Alimento
 
 class Receita {
 
+	// A receita precisa ter uma conexão com os pacientes e com o nutricionista, mas não sei como fazer para determinar essa relação no form GSP
+
 	String nome;
 	String descricao;
 	String tipo;
@@ -14,5 +16,7 @@ class Receita {
 	List<Alimento> jantar = new ArrayList<>();
 
     static constraints = {
+    	nome blank: false, unique: true
+    	tipo blank: false
     }
 }
