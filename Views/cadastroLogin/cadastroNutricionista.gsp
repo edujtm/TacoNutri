@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-		<meta name="layout" content="main"/>
-		<title>Cadastro de nutricionista</title>
-
+		<title>Cadastro de Nutricionista</title>
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Pontano+Sans|Ruda:900" rel="stylesheet"/>
+		<asset:stylesheet src="estiloTopToolbarLoggedOut.css"/>
+		<asset:stylesheet src="estiloCadastroUsuario.css"/>
 	</head>
 	<body>
-
-		<g:form controller="CadastroLogin" action="cadastrarNutricionista">
-			<b>Nome do nutricionista: </b> <g:textField name="nomeNutricionista"/> <br/>
-			<b>Login: </b> <g:textField name="nomeLogin"/> <br/>
-			<b>Senha: </b> <g:passwordField name="senhaLogin"/> <br/>
-			<b>Local da CRN: </b> <g:textField name="localCrn"/> <br/>
-			<b>Numero da CRN: </b> <g:textField name="crn"/> <br/>
-			<b>CPF: </b> <g:textField name="cpf"/> <br/>
-			<b>RG: </b> <g:textField name="rg"/> <br/>
-			<input type="submit" value="Cadastrar"/>
-		</g:form>
-		
+		<!-- TODO colocar topo da página e texto de boas vindas -->
+		<g:render template="/layouts/topo_toolbar"/>
+		<div id="background">
+			<div id="formCadastroU">
+				<div id="formContent">
+					<g:form controller="CadastroLogin" action="cadastrarNutricionista">
+						<span class="label"><b>Nome do Nutricionista </b></span> <g:textField class="inputField" name="nomeNutricionista"/> <br/>
+						<span class="label"><b>Login </b></span> <g:textField class="inputField" name="nomeLogin"/> <br/>
+						<span class="label"><b>Senha </b></span> <g:passwordField class="inputField" name="senhaLogin"/> <br/>
+						<span class="label"><b>Local da CRN </b></span> <g:textField class="inputField" name="localCrn"/> <br/>
+						<span class="label"><b>CPF </b></span> <g:textField class="inputField" name="cpf"/> <br/>
+						<span class="label"><b>RG </b></span> <g:textField class="inputField" name="rg"/> <br/>
+						<input class="btn" type="submit" value="Cadastrar"/>
+					</g:form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
