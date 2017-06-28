@@ -6,16 +6,16 @@ import edu.ufrn.pdsoft.model.Receita
 
 class TelaCadastroController {
 
-    def index() { }
+    def index() { 
+        // [nomes: params.nomes, links: params.links]
+    }
 
     def visualizaAlimento() { 
     	def alimentos = Alimento.list()
     	[alimentos: alimentos]
     }
 
-    def cadastroAlimento() {
-
-    }
+    def cadastroAlimento() {}
 
     def buscarAlimento() {
     	Alimento alimento = Alimento.get(params.alimentoBusca)
@@ -40,15 +40,15 @@ class TelaCadastroController {
     	alimento.save(flush: true);
     	render(view: 'cadastroFeito.gsp')
     }
+     
+    def cadastroDieta() { }
 
-    def cadastroReceita() { }
-
-    def visualizaReceita(Integer max) {
+    def visualizaDieta(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [recipesList: Receita.list(params), recipeTotal: Receita.count()]
-     }
+     } 
 
-    def cadastrarReceita() {
+    def cadastrarDieta() {
         def receitas = Receita.list()
         boolean exists = false
 
@@ -65,6 +65,7 @@ class TelaCadastroController {
             String descricao = params.descricaoReceita
             String tipo = params.tipoReceita
 
+            // TODO Procurar modo de receber listas de alimentos ao inves de 
             Alimento cafeManha = Alimento.findByNome(params.alimentoCafe)
             Alimento lancheManha = Alimento.findByNome(params.lancheManha)
             Alimento almoco = Alimento.findByNome(params.alimentoAlmoco)

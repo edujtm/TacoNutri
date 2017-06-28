@@ -30,7 +30,9 @@ class AlimentoController {
     def doUpload() {
         def file = request.getFile('file')
         Workbook workbook = Workbook.getWorkbook(file.getInputStream());
-        Sheet sheet = workbook.getSheet(0);
+        Sheet sheet = workbook.getSheet(0)
+        int errorRows = 0;
+        List<String> errorRowName = new ArrayList<>()
 
         // skip first row (row 0) by starting from 1
         for (int row = 1; row < sheet.getRows(); row++) {
@@ -39,11 +41,16 @@ class AlimentoController {
             NumberCell foodProteins = sheet.getCell(COLUMN_PROTEINS, row)
             NumberCell calciumValue = sheet.getCell(COLUMN_CALCIUM, row)
 
-            new Alimento(nome:foodName.string , calorias:foodCalories.value ,
-                    proteinas: foodProteins.value, calcio:calciumValue.value).save()
-
+            def novoAlimento = new Alimento(nome:foodName.string , calorias:foodCalories.value ,
+                    proteinas: foodProteins.value, calcio:calciumValue.value)
+            if (novoAlimento.validate()) {
+                novoAlimento.save()
+            } else {
+                errorRows++
+                errorRowName.append(foodName.string)
+            }
         }
-        redirect (action:'list')
+        redirect (action:'list', params: [errorCount: errorRows, errorList: errorRowName])
     }
 
 }
